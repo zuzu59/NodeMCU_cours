@@ -1,6 +1,6 @@
 # NodeMCU_cours
 Afin que je puisse donner des cours NodeMCU facilement ;-)
-zf200223.1926
+zf200223.1941
 
 
 # Installation
@@ -15,11 +15,17 @@ cd NodeMCU_cours
 ```
 
 # Utilisation
-Pour démarrer l'IDE pour le NodeMCU, simplement exécuter le script:
+## Pour démarrer l'IDE pour le NodeMCU, simplement exécuter le script:
 
 ```
 ./start.sh
 ```
+
+## Pour utiliser directement la console du NodeMCU
+```
+screen /dev/ttyUSB0 115200
+```
+
 
 
 
