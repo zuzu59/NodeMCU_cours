@@ -6,14 +6,21 @@ echo ---------- install des utilitaires à zuzu
 
 sudo apt update
 sudo apt install -y htop git screen
-git clone https://github.com/zuzu59/deploy-proxmox.git
 cd
+git clone https://github.com/zuzu59/deploy-proxmox.git
 ./deploy-proxmox/install_utils.sh 
 
 echo ---------- install ESPlorer
+cd ~/NodeMCU_cours/
+unzip ESPlorer.zip
 
-curl -o ESPlorer.zip https://esp8266.ru/esplorer-latest/?f=ESPlorer.zip
+echo ---------- autorisation dialout
+sudo usermod -a -G dialout xubuntu
 
+
+
+
+echo ---------- ATTENTION, il faut se déconecter/reconnecter pour que l'on puisse utiliser le port série !
 
 
 
