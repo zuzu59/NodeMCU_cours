@@ -1,6 +1,6 @@
 # NodeMCU_cours
-Afin que je puisse donner des cours NodeMCU facilement ;-)
-zf200223.1941
+Afin que je puisse donner des cours NodeMCU facilement sur Linux ;-)
+zf200223.1942
 
 
 # Installation
