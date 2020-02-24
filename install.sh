@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #Install de tout ce qu'il faut pour bien donner un cours de NodeMCU ;-)
-#zf200223.1934
+#zf200224.1141
 
 echo "---------- install des utilitaires à zuzu"
 
@@ -9,7 +9,7 @@ git clone https://github.com/zuzu59/deploy-proxmox.git
 ./deploy-proxmox/install_utils.sh 
 
 echo "---------- install des utilitaires pour bien fonctionner"
-sudo apt install -y screen
+sudo apt install -y screen default-jre
 
 echo "---------- install ESPlorer"
 cd NodeMCU_cours/
