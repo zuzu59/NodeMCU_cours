@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 #Install de tout ce qu'il faut pour bien donner un cours de NodeMCU ;-)
-#zf200224.1141
+#zf200224.1447
 
 echo "---------- install des utilitaires à zuzu"
 
 cd
+git clone https://github.com/zuzu59/NodeMCU_Lua.git
 git clone https://github.com/zuzu59/deploy-proxmox.git
 ./deploy-proxmox/install_utils.sh 
 
@@ -14,6 +15,11 @@ sudo apt install -y screen default-jre
 echo "---------- install ESPlorer"
 cd NodeMCU_cours/
 unzip ESPlorer.zip
+
+
+
+
+
 
 echo "---------- autorisation dialout"
 sudo usermod -a -G dialout xubuntu
